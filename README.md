@@ -1,3 +1,4 @@
+**ticket**: https://github.com/typelevel/natchez/issues/847
 
 This is a sample app, with a single Main class which:
 
