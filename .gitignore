@@ -1,0 +1,15 @@
+
+project/project/
+project/target/
+target/
+.sbtopts
+.tasty
+.idea/
+*.iml
+.metals/
+.bloop/
+.bsp/
+project/metals.sbt
+.DS_Store
+
+lib/

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date{HH:mm:ss.SSS} %.-3level %logger{0}[%highlight(%X)] %message%n%xException</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ASYNCSTDOUT" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="STDOUT"/>
+    </appender>
+
+    <root level="TRACE">
+        <appender-ref ref="ASYNCSTDOUT"/>
+    </root>
+
+    <logger name="appserver" level="INFO"/>
+    <logger name="testsuite" level="INFO"/>
+    <logger name="ddogtrace" level="INFO"/>
+
+    <logger name="org.http4s.ember.client" level="WARN"/>
+    <logger name="org.http4s.ember.server" level="WARN"/>
+
+
+</configuration>
